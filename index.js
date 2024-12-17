@@ -19,6 +19,17 @@ let plus = document.getElementById("plus");
 let point = document.getElementById("point");
 let equal = document.getElementById("equal");
 
+document.getElementById('inputVisible').addEventListener('input', function(event) {
+  
+  let value = event.target.value;
+
+  
+  value = value.replace(/[^0-9+\-*/.]/g, "");
+
+  // On met à jour la valeur de l'input avec la chaîne filtrée
+  event.target.value = value;
+});
+
 function displayElementInTheInputVisible(inputVisible, valeur) {
   inputVisible.value += `${valeur}`;
 }

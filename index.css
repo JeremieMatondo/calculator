@@ -30,7 +30,8 @@
     background: white;
     font-size: 30px;
     font-weight: 700;
-    margin: 4px
+    margin: 4px;
+    cursor: pointer;
 }
 form input#inputVisible{
     width: 100%;
@@ -53,4 +54,39 @@ form input#equal{
   }
   form input#AC{
     background: #6666ff
+}
+
+@media screen and (max-width:770px){
+    .calculator form input{
+        width:30px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 4px;
+        
+    }
+    form input#equal{
+        width: 75px;
+       
+      }
+      
+    
+}
+@media screen and (max-width:500px){
+    .calculator form input{
+        width:20px;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 700;
+        margin: 4px;
+        
+    }
+    form input#equal{
+        width: 55px;
+        
+      }
+      
+    
 }
